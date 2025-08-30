@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>obj-assessment</title>
+  </head>
+  <body>
+    <script>
+      const amazonProject = {
+        name: "basketball",
+        price: 2095,
+      };
+      console.log(amazonProject);
+      amazonProject.price += 500;
+      console.log(amazonProject.price);
+
+      amazonProject["delivery-time"] = "3days";
+      console.log(amazonProject);
+
+      function compareFunction(product, product2) {
+        if (product.price < product2.price) {
+          return product;
+        } else {
+          return product2;
+        }
+      }
+
+      const product = {
+        name: "basketball",
+        price: 2095,
+      };
+
+      const product2 = {
+        name: "shirt",
+        price: 1095,
+      };
+
+      const product3 = {
+        name: "basketball",
+        price: 2095,
+      };
+
+      console.log(compareFunction(product, product2));
+
+      function isSameProduct(product, product2) {
+        return product.name === product2 && product.price === product2.price;
+      }
+
+      console.log(product, product2);
+      console.log(product, product3);
+
+      console.log("HELLO".toLowerCase());
+      console.log("test".repeat(2));
+    </script>
+  </body>
+</html>

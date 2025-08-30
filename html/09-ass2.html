@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <input
+      type="Name"
+      class="js-name"
+      onkeydown="
+      displayName();
+      "
+    />
+
+    <button
+      onclick="
+      displayName()
+    const inputElemnt = document.querySelector('.js-name');
+    document.querySelector('.js-message').innerHTML = `Your name is: ${inputElemnt.value}` "
+    >
+      Submit
+    </button>
+
+    <p class="js-message"></p>
+
+    <script>
+      function displayName() {
+        if (event.key === "Enter") {
+          //optional instead of duplicateing this code
+          //you could also put it in a function
+          const inputElemnt = document.querySelector(".js-name");
+          document.querySelector(
+            ".js-message"
+          ).innerHTML = `Your name is: ${inputElemnt.value}`;
+        }
+      }
+    </script>
+  </body>
+</html>

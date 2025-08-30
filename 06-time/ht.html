@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Time</title>
+  </head>
+  <body>
+    <script>
+      /*  const hour = 8;
+      const name = "Izzy Sama";
+
+      if (hour >= 6 && hour <= 12) {
+        console.log(`Good morning ${name}`);
+      } else if (hour >= 13 && hour <= 17) {
+        console.log(`Good afternoon ${name}`);
+      } else {
+        console.log(`Good evening ${name}`);
+      }*/
+
+      const age = 5;
+      const isHoliday = true;
+      const ranNumber = Math.random();
+      let result;
+
+      if ((age <= 6 || age >= 65) && isHoliday) {
+        console.log("Discount");
+      } else {
+        console.log("no discount");
+      }
+
+      if (ranNumber < 0.5) {
+        result = "Head";
+      } else {
+        result = "tail";
+      }
+
+      const guess = "Head";
+
+      if (guess === result) {
+        console.log("You win!");
+      } else {
+        console.log("You lose!");
+      }
+    </script>
+  </body>
+</html>

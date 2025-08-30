@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <input
+      onkeydown="
+      const inputElement = document.querySelector('.js-input');
+      document.querySelector('.js-mssg').innerHTML = inputElement.value;
+      "
+      type="name"
+      class="js-input"
+    />
+
+    <p class="js-mssg"></p>
+  </body>
+</html>

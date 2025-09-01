@@ -319,7 +319,7 @@
       console.log(foods); */
 
       //11v
-      for(let i = 1; i <= 20; i++) {
+/*      for(let i = 1; i <= 20; i++) {
         // The trick to this problem is to check if
         // the number is divisible by 3 and 5 first.
         // Otherwise, it will always display 'Fizz'
@@ -333,4 +333,35 @@
         } else{
           console.log(i);
         }
+      }*/
+
+        //11w
+      function findIndex(array, word) {
+        let index = -1;
+        for (let i = 0; i < array.length; i++) {
+          if (array[i] === word) {
+            return i;
+          }
+        }
+        return index;
       }
+
+      function unique(array){
+        const result = [];
+
+        for(let i = 0; i < array.length; i++){
+          const word = array[i];
+
+           // Using the findIndex() function from above, we
+          // can check if the string is already in the
+          // result array. If it's not in the result array
+          // (index is -1), then add it to the result array.
+
+          if(findIndex(result, word) === -1){
+            result.push(word);
+          }
+        }
+        return result;
+      }
+      console.log(findIndex(["green", "red", "blue", "red"], "red"));
+      console.log(unique(["green", "red", "blue", "red"], "yellow"));

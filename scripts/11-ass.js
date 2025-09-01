@@ -184,7 +184,7 @@
       }
       console.log(index);*/
 
-      //11q
+   /*   //11q
       function findIndex(array, word) {
         let index = -1;
         for (let i = 0; i < array.length; i++) {
@@ -218,3 +218,29 @@
          return result;
       }
      console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']))
+
+      //11 t
+      function removeEgg(foods){
+        //to remove the last 2 'eggs' we reverse the array first
+
+        const reverseFood = foods.reverse();
+
+        const result = []
+        let eggsRemoved = 0;
+
+        for(let i = 0; i < reverseFood.length; i++){
+          // if th string is 'egg' use continue to skip it
+          //using guard op to check both are true
+          if (foods[i] === 'egg' && eggsRemoved < 2){
+             eggsRemoved++;
+
+            continue;
+          }
+          //we don't need and else cause cause is true
+          //if it was false then else would be needed
+        
+          result.push(reverseFood[i]);
+        }
+         return result.reverse();
+      }
+     console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham'])); */

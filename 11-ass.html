@@ -67,7 +67,7 @@
 
       //11h
 
-      function addOne(array) {
+      /*   function addOne(array) {
         const add = [];
 
         for (i = 0; i <= array.length; i++) {
@@ -76,7 +76,46 @@
         return add;
       }
       console.log(addOne([1, 2, 3]));
-      console.log(addOne([-2, -1, 0, 99]));
+      console.log(addOne([-2, -1, 0, 99])); */
+
+      //11i
+      /*  function addNum(array, num) {
+        const add = [];
+
+        for (i = 0; i <= array.length; i++) {
+          add.push(array[i] + num);
+        }
+        return add;
+      }
+      console.log(addNum([1, 2, 3], 2));
+      console.log(addNum([1, 2, 3], 3));
+      console.log(addNum([-2, -1, 0, 99], 2)); */
+
+      //11j
+      /* function addArrays(array1, array2) {
+        const add = [];
+
+        for (i = 0; i <= array1.length; i++) {
+          add.push(array1[i] + array2[i]);
+        }
+        return add;
+      }
+      console.log(addArrays([1, 1, 2], [1, 1, 3]));
+      console.log(addArrays([1, 2, 3], [4, 5, 6])); */
+
+      //11k
+      function countPositive(nums) {
+        let count = 0;
+
+        for (i = 0; i < nums.length; i++) {
+          if (nums[i] > 0) {
+            count++;
+          }
+        }
+        return count;
+      }
+      console.log(countPositive([1, -3, 5]));
+      console.log(countPositive([-2, 3, -5, 7, 10]));
     </script>
   </body>
 </html>

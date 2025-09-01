@@ -158,7 +158,7 @@
 
       console.log(countWords(["apple", "grape", "apple", "apple"]));*/
 
-      //110
+      //11o
       /* let words = ["hello", "world", "search", "good"];
 
       let index = -1;
@@ -184,6 +184,7 @@
       }
       console.log(index);*/
 
+      //11q
       function findIndex(array, word) {
         let index = -1;
         for (let i = 0; i < array.length; i++) {
@@ -195,3 +196,25 @@
       }
       console.log(findIndex(["green", "red", "blue", "red"], "red"));
       console.log(findIndex(["green", "red", "blue", "red"], "yellow"));
+
+      //11r/s
+      function removeEgg(foods){
+        const result = []
+        let eggsRemoved = 0;
+
+        for(let i = 0; i < foods.length; i++){
+          // if th string is 'egg' use continue to skip it
+          //using guard op to check both are true
+          if (foods[i] === 'egg' && eggsRemoved < 2){
+             eggsRemoved++;
+
+            continue;
+          }
+          //we don't need and else cause cause is true
+          //if it was false then else would be needed
+        
+          result.push(foods[i]);
+        }
+         return result;
+      }
+     console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']))

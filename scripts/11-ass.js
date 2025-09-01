@@ -244,3 +244,93 @@
          return result.reverse();
       }
      console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham'])); */
+
+     //11u
+    //   function removeEgg(foods){
+    //     //to remove the last 2 'eggs' we reverse the array first
+    //     //to prevent the og array we can create a copy
+    //     //of the array using .slice()
+    //     const foodCopy = foods.splice();
+    //     const reverseFood = foodCopy.reverse();
+
+    //     // Advanced technique:
+    //     // Since foods.slice() results in an array, we
+    //     // can also use .reverse() directly like this:
+    //     // foods.slice().reverse();
+        
+    //     // This technique is called "method chaining"
+    //     // because we use one method after another
+    //     // (like a chain of methods).
+
+    //     const result = []
+    //     let eggsRemoved = 0;
+
+    //     for(let i = 0; i < reverseFood.length; i++){
+    //       // if th string is 'egg' use continue to skip it
+    //       //using guard op to check both are true
+    //       if (reverseFood[i] === 'egg' && eggsRemoved < 2){
+    //          eggsRemoved++;
+
+    //         continue;
+    //       }
+    //       //we don't need and else cause cause is true
+    //       //if it was false then else would be needed
+        
+    //       result.push(reverseFood[i]);
+    //     }
+    //      return result.reverse();
+    //   }
+     
+    //  const foods = ['egg', 'apple', 'egg', 'egg'];
+    //  console.log(removeEgg(foods));
+    //  console.log(foods);
+         //11y copy
+    /*  function removeEgg(foods) {
+        // To prevent modifying the original array, we
+        // can create a copy of the array using .slice()
+        const foodsCopy = foods.slice();
+        const reversedFoods = foodsCopy.reverse();
+
+        // Advanced technique:
+        // Since foods.slice() results in an array, we
+        // can also use .reverse() directly like this:
+        // foods.slice().reverse();
+        
+        // This technique is called "method chaining"
+        // because we use one method after another
+        // (like a chain of methods).
+        const result = [];
+        let eggsRemoved = 0;
+
+        for (let i = 0; i < reversedFoods.length; i++) {
+          if (reversedFoods[i] === 'egg' && eggsRemoved < 2) {
+            eggsRemoved++;
+            continue;
+          }
+
+          result.push(reversedFoods[i]);
+        }
+
+        return result.reverse();
+      }
+
+      const foods = ['egg', 'apple', 'egg', 'egg', 'ham'];
+      console.log(removeEgg(foods));
+      console.log(foods); */
+
+      //11v
+      for(let i = 1; i <= 20; i++) {
+        // The trick to this problem is to check if
+        // the number is divisible by 3 and 5 first.
+        // Otherwise, it will always display 'Fizz'
+       
+        if (i % 3 === 0 && i % 5 === 0){
+          console.log('FizzBuzz');
+        } else if(i % 3 === 0){
+          console.log('Fizz');
+        }else if (i % 5 === 0){
+          console.log('Buzz')
+        } else{
+          console.log(i);
+        }
+      }
